@@ -1,0 +1,126 @@
+@media (max-width: 1000px){
+  .menu__btn{
+    display: flex;
+  }
+  .menu{
+    position: relative;
+  }
+  .menu__items{
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    background: transparent;
+    transform: translateY(-350%);
+  }
+  .menu__item{
+    border: none;
+    width: 100%;
+  }
+  .menu__link{
+    width: 100%;
+    background: #616161;
+  }
+  .content-bot::before,
+  .content-bot::after,
+  .content-bot__item-line--big::before,
+  .content-bot__item-line--big::after,
+  .content-bot__item-line::before,
+  .content-bot__item-line::after{
+  display: none;
+  }
+}
+
+@media (max-width: 963px){
+  .content-top{
+    display: block;
+  }
+  .content-top__item{
+    max-width: 100%;
+    width: 100%;
+  }
+  .content-top__item + .content-top__item{
+    margin-top: 20px;
+  }
+  .content-top__img{
+    width: 100%;
+    max-height: 170px;
+  }
+  .content-mid__inner{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .content-mid__img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 921px){
+  .content-bot__item{
+    max-width: 100%;
+  }
+  .content-bot{
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px){
+  .header__inner{
+    display: block;
+  }
+  .header__logo-link{
+    display: none;
+  }
+  .header__logo-mob{
+    display: block;
+    margin-bottom: 15px;
+  }
+  .header__mob{
+    width: 100%;
+  }
+}
+
+@media (max-width: 678px){
+  .header__list{
+    display: block;
+  }
+  .header__item + .header__item{
+    margin-top: 5px;
+  }
+  .content-mid__inner{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-mid__disable{
+    display: none;
+  }
+  .content-mid__btn{
+    display: block;
+  }
+}
+
+@media (max-width: 667px){
+  .middle__inner{
+    background: transparent;
+    padding: 0;
+  }
+  .middle__left,
+  .middle__form,
+  .middle__label{
+    width: 100%;
+  }
+  .middle__left{
+    margin-bottom: 20px;
+  }
+  .middle__right{
+    max-width: 100%;
+    align-items: flex-start;
+    min-height: 152px;
+    box-shadow: 3px 3px 5px #a3a3a3;
+  }
+}
+
+@media (max-width: 375px){
+  .menu__link{
+    font-size: 14px;
+  }
+}
